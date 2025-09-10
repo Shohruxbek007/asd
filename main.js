@@ -1,34 +1,26 @@
-let chat = document.getElementById("chat")
-let box = document.getElementById("box")
-let Chat = document.querySelector(".chat")
+$(document).ready(function(){
 
-function send() {
-    let inp = document.getElementById("inp")
-    if (box.checked) {
-        Chat.innerHTML = Chat.innerHTML + "<div class='right'><h3 align='right'>" + inp.value + "</h3></div>"
-        // console.log("ong")
-    }
-    else {
-        Chat.innerHTML = Chat.innerHTML + "<div class='left'><h3 align='left'>" + inp.value + "</h3></div>"
-        // console.log("chap")
-    }
+$(".but1").click(function (){
+    $("img").css("opacity","0%")
+})
+
+$(".but2").click(function (){
+    $(this).css("background","lime")
+    $(this).css("width","300px")
+
+    $(this).css("height","70px")
+})
+
+$(".but3").click(function (){
+    $("h1").css("color","red")
+    $("p").css("color","green")
+
+})
+$("img").click(function (){
+    $(document.body).css("background",`url("${this.src}")`)
+      
+})
 
 
-    inp.focus()
-    inp.value = ''
-    event.preventDefault()
-}
 
-
-function check() 
-{
-    let inp = document.getElementById("inp")
-    if (inp.value == "") {
-        console.log("error")
-    }
-
-    else {
-        send()
-    }
-}
-
+})
