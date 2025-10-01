@@ -1,0 +1,31 @@
+img{
+    width: 200px;
+    height: 200px;
+    margin:30px;
+    
+}
+.lime{
+    width: 200px;
+    height: 200px;
+    
+     margin: 10px;
+}
+
+.blue{
+    width: 200px;
+    height: 200px;
+    background: blue;
+     margin: 10px;
+}
+
+.red{
+    width: 200px;
+    height: 200px;
+    background: red;
+     margin: 10px;
+}
+.colors{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
